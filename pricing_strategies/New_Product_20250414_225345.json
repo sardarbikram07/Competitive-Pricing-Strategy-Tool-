@@ -1,0 +1,18 @@
+{
+    "category": "Home Office",
+    "predicted_market_price": 2095.234246826172,
+    "manufacturing_cost": 900.0,
+    "recommended_price": 1466.6639727783202,
+    "min_competitive_price": 1466.6639727783202,
+    "max_competitive_price": 1676.1873974609375,
+    "minimum_viable_price": 1000.0,
+    "profit_margin": 0.38636250926985094,
+    "profit_margin_percentage": 38.63625092698509,
+    "discount_from_market": 30.000000000000004,
+    "market_saturation": "medium",
+    "brand_strength": "low",
+    "price_elasticity": -1.5,
+    "estimated_sales_impact": 45.00000000000001,
+    "strategy": "Aggressive Market Entry",
+    "market_position_percentile": 31.231518771980383
+}

@@ -1,0 +1,18 @@
+{
+    "category": "Audio",
+    "predicted_market_price": 264.2812194824219,
+    "manufacturing_cost": 100.0,
+    "recommended_price": 198.2109146118164,
+    "min_competitive_price": 198.2109146118164,
+    "max_competitive_price": 224.6390365600586,
+    "minimum_viable_price": 108.69565217391303,
+    "profit_margin": 0.4954869150579134,
+    "profit_margin_percentage": 49.54869150579134,
+    "discount_from_market": 25.0,
+    "market_saturation": "medium",
+    "brand_strength": "medium",
+    "price_elasticity": -1.5,
+    "estimated_sales_impact": 37.5,
+    "strategy": "Aggressive Market Entry",
+    "market_position_percentile": 4.960233098393804
+}

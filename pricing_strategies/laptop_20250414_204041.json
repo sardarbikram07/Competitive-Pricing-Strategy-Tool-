@@ -1,0 +1,20 @@
+{
+    "category": "Computers",
+    "predicted_market_price": 3787.88525390625,
+    "manufacturing_cost": 10000.0,
+    "recommended_price": 10526.315789473685,
+    "min_competitive_price": 3409.0967285156253,
+    "max_competitive_price": 3787.88525390625,
+    "minimum_viable_price": 10526.315789473685,
+    "profit_margin": 0.05000000000000008,
+    "profit_margin_percentage": 5.0,
+    "discount_from_market": 177.89426246791507,
+    "market_saturation": "medium",
+    "brand_strength": "medium",
+    "price_elasticity": -1.2,
+    "estimated_sales_impact": -15.0,
+    "strategy": "Cost Reconsideration Required",
+    "viability_issue": true,
+    "recommended_max_cost": 2840.9139404296875,
+    "cost_reduction_needed": 7159.0860595703125
+}

@@ -1,0 +1,18 @@
+{
+    "category": "Cameras",
+    "predicted_market_price": 1632.4847412109375,
+    "manufacturing_cost": 1000.0,
+    "recommended_price": 1224.3635559082031,
+    "min_competitive_price": 1224.3635559082031,
+    "max_competitive_price": 1387.6120300292969,
+    "minimum_viable_price": 1086.9565217391305,
+    "profit_margin": 0.18324912957881673,
+    "profit_margin_percentage": 18.324912957881672,
+    "discount_from_market": 25.0,
+    "market_saturation": "medium",
+    "brand_strength": "medium",
+    "price_elasticity": -1.5,
+    "estimated_sales_impact": 37.5,
+    "strategy": "Aggressive Market Entry",
+    "market_position_percentile": 33.650728156329194
+}

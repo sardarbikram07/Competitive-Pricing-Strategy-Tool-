@@ -1,0 +1,20 @@
+Pricing Analysis Summary for Computers
+==================================================
+
+Benchmark Data:
+  Median Price: ₹2039.75
+  25th Percentile (Q1): ₹549.00
+  75th Percentile (Q3): ₹3530.50
+  Min Price: ₹1019.88
+  Max Price: ₹3059.62
+
+Price Prediction (relative to median): 0.75x
+
+Strategy Distribution:
+  Premium Cost Recovery: 18 cases (78.3%)
+  Cost Reconsideration Required: 5 cases (21.7%)
+
+Viability issues detected: 5 cases
+High cost warnings issued: 0 cases
+
+Manufacturing Cost Analysis:

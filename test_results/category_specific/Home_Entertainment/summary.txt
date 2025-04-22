@@ -1,0 +1,20 @@
+Pricing Analysis Summary for Home Entertainment
+==================================================
+
+Benchmark Data:
+  Median Price: ₹3201.12
+  25th Percentile (Q1): ₹519.00
+  75th Percentile (Q3): ₹5883.25
+  Min Price: ₹1600.56
+  Max Price: ₹4801.69
+
+Price Prediction (relative to median): 0.77x
+
+Strategy Distribution:
+  Premium Cost Recovery: 18 cases (78.3%)
+  Cost Reconsideration Required: 5 cases (21.7%)
+
+Viability issues detected: 5 cases
+High cost warnings issued: 0 cases
+
+Manufacturing Cost Analysis:

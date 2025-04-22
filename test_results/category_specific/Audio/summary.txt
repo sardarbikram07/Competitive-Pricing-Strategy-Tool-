@@ -1,0 +1,20 @@
+Pricing Analysis Summary for Audio
+==================================================
+
+Benchmark Data:
+  Median Price: ₹5494.50
+  25th Percentile (Q1): ₹999.00
+  75th Percentile (Q3): ₹9990.00
+  Min Price: ₹2747.25
+  Max Price: ₹8241.75
+
+Price Prediction (relative to median): 0.78x
+
+Strategy Distribution:
+  Premium Cost Recovery: 18 cases (78.3%)
+  Cost Reconsideration Required: 5 cases (21.7%)
+
+Viability issues detected: 5 cases
+High cost warnings issued: 0 cases
+
+Manufacturing Cost Analysis:

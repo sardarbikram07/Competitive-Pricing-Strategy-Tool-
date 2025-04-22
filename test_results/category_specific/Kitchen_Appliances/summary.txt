@@ -1,0 +1,22 @@
+Pricing Analysis Summary for Kitchen Appliances
+==================================================
+
+Benchmark Data:
+  Median Price: ₹1800.25
+  25th Percentile (Q1): ₹554.50
+  75th Percentile (Q3): ₹3046.00
+  Min Price: ₹900.12
+  Max Price: ₹2700.38
+
+Price Prediction (relative to median): 0.78x
+
+Strategy Distribution:
+  Thin-Margin Volume Strategy: 15 cases (65.2%)
+  Cost Reconsideration Required: 5 cases (21.7%)
+  Brand Premium Strategy: 2 cases (8.7%)
+  Undercut Competitors Strategy: 1 cases (4.3%)
+
+Viability issues detected: 5 cases
+High cost warnings issued: 0 cases
+
+Manufacturing Cost Analysis:

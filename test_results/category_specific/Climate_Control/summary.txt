@@ -1,0 +1,20 @@
+Pricing Analysis Summary for Climate Control
+==================================================
+
+Benchmark Data:
+  Median Price: ₹4921.00
+  25th Percentile (Q1): ₹880.00
+  75th Percentile (Q3): ₹8962.00
+  Min Price: ₹2460.50
+  Max Price: ₹7381.50
+
+Price Prediction (relative to median): 0.77x
+
+Strategy Distribution:
+  Premium Cost Recovery: 18 cases (78.3%)
+  Cost Reconsideration Required: 5 cases (21.7%)
+
+Viability issues detected: 5 cases
+High cost warnings issued: 0 cases
+
+Manufacturing Cost Analysis:

@@ -1,0 +1,20 @@
+{
+    "category": "Home Improvement",
+    "predicted_market_price": 287.21629028320314,
+    "manufacturing_cost": 300.0,
+    "recommended_price": 322.58064516129036,
+    "min_competitive_price": 258.4946612548828,
+    "max_competitive_price": 287.21629028320314,
+    "minimum_viable_price": 322.58064516129036,
+    "profit_margin": 0.07000000000000012,
+    "profit_margin_percentage": 7.000000000000001,
+    "discount_from_market": 12.312795643734901,
+    "market_saturation": "high",
+    "brand_strength": "high",
+    "price_elasticity": -1.2,
+    "estimated_sales_impact": -15.0,
+    "strategy": "Cost Reconsideration Required",
+    "viability_issue": true,
+    "recommended_max_cost": 229.7730322265625,
+    "cost_reduction_needed": 70.22696777343751
+}

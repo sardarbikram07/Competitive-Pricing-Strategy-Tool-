@@ -1,0 +1,352 @@
+{
+    "Computers": {
+        "discounted_price": {
+            "Q1": 549.0,
+            "Q3": 3530.5,
+            "IQR": 2981.5,
+            "lower_bound": 0,
+            "upper_bound": 8002.75,
+            "outliers_lower": "0",
+            "outliers_upper": "102",
+            "total_outliers": "102",
+            "percentage_outliers": 14.24581005586592
+        },
+        "actual_price": {
+            "Q1": 1396.75,
+            "Q3": 7999.25,
+            "IQR": 6602.5,
+            "lower_bound": 0,
+            "upper_bound": 17903.0,
+            "outliers_lower": "0",
+            "outliers_upper": "99",
+            "total_outliers": "99",
+            "percentage_outliers": 13.8268156424581
+        },
+        "manufacturing_cost": {
+            "Q1": 289.125,
+            "Q3": 1798.0,
+            "IQR": 1508.875,
+            "lower_bound": 0,
+            "upper_bound": 4061.3125,
+            "outliers_lower": "0",
+            "outliers_upper": "102",
+            "total_outliers": "102",
+            "percentage_outliers": 14.24581005586592
+        }
+    },
+    "Mobile Accessories": {
+        "discounted_price": {
+            "Q1": 266.0,
+            "Q3": 1089.0,
+            "IQR": 823.0,
+            "lower_bound": 0,
+            "upper_bound": 2323.5,
+            "outliers_lower": "0",
+            "outliers_upper": "51",
+            "total_outliers": "51",
+            "percentage_outliers": 6.24235006119951
+        },
+        "actual_price": {
+            "Q1": 749.0,
+            "Q3": 2999.0,
+            "IQR": 2250.0,
+            "lower_bound": 0,
+            "upper_bound": 6374.0,
+            "outliers_lower": "0",
+            "outliers_upper": "80",
+            "total_outliers": "80",
+            "percentage_outliers": 9.791921664626683
+        },
+        "manufacturing_cost": {
+            "Q1": 142.0,
+            "Q3": 549.5,
+            "IQR": 407.5,
+            "lower_bound": 0,
+            "upper_bound": 1160.75,
+            "outliers_lower": "0",
+            "outliers_upper": "52",
+            "total_outliers": "52",
+            "percentage_outliers": 6.364749082007344
+        }
+    },
+    "Home Entertainment": {
+        "discounted_price": {
+            "Q1": 519.0,
+            "Q3": 5883.25,
+            "IQR": 5364.25,
+            "lower_bound": 0,
+            "upper_bound": 13929.625,
+            "outliers_lower": "0",
+            "outliers_upper": "88",
+            "total_outliers": "88",
+            "percentage_outliers": 10.138248847926267
+        },
+        "actual_price": {
+            "Q1": 1299.0,
+            "Q3": 14999.0,
+            "IQR": 13700.0,
+            "lower_bound": 0,
+            "upper_bound": 35549.0,
+            "outliers_lower": "0",
+            "outliers_upper": "96",
+            "total_outliers": "96",
+            "percentage_outliers": 11.059907834101383
+        },
+        "manufacturing_cost": {
+            "Q1": 274.0,
+            "Q3": 2999.5,
+            "IQR": 2725.5,
+            "lower_bound": 0,
+            "upper_bound": 7087.75,
+            "outliers_lower": "0",
+            "outliers_upper": "81",
+            "total_outliers": "81",
+            "percentage_outliers": 9.331797235023041
+        }
+    },
+    "Kitchen Appliances": {
+        "discounted_price": {
+            "Q1": 554.5,
+            "Q3": 3046.0,
+            "IQR": 2491.5,
+            "lower_bound": 0,
+            "upper_bound": 6783.25,
+            "outliers_lower": "0",
+            "outliers_upper": "74",
+            "total_outliers": "74",
+            "percentage_outliers": 8.574739281575898
+        },
+        "actual_price": {
+            "Q1": 1199.0,
+            "Q3": 6292.5,
+            "IQR": 5093.5,
+            "lower_bound": 0,
+            "upper_bound": 13932.75,
+            "outliers_lower": "0",
+            "outliers_upper": "109",
+            "total_outliers": "109",
+            "percentage_outliers": 12.630359212050985
+        },
+        "manufacturing_cost": {
+            "Q1": 286.0,
+            "Q3": 1599.5,
+            "IQR": 1313.5,
+            "lower_bound": 0,
+            "upper_bound": 3569.75,
+            "outliers_lower": "0",
+            "outliers_upper": "71",
+            "total_outliers": "71",
+            "percentage_outliers": 8.227114716106605
+        }
+    },
+    "Audio": {
+        "discounted_price": {
+            "Q1": 999.0,
+            "Q3": 9990.0,
+            "IQR": 8991.0,
+            "lower_bound": 0,
+            "upper_bound": 23476.5,
+            "outliers_lower": "0",
+            "outliers_upper": "152",
+            "total_outliers": "152",
+            "percentage_outliers": 11.532625189681335
+        },
+        "actual_price": {
+            "Q1": 2499.0,
+            "Q3": 19885.25,
+            "IQR": 17386.25,
+            "lower_bound": 0,
+            "upper_bound": 45964.625,
+            "outliers_lower": "0",
+            "outliers_upper": "154",
+            "total_outliers": "154",
+            "percentage_outliers": 11.684370257966616
+        },
+        "manufacturing_cost": {
+            "Q1": 506.625,
+            "Q3": 5181.25,
+            "IQR": 4674.625,
+            "lower_bound": 0,
+            "upper_bound": 12193.1875,
+            "outliers_lower": "0",
+            "outliers_upper": "152",
+            "total_outliers": "152",
+            "percentage_outliers": 11.532625189681335
+        }
+    },
+    "Smartwatches": {
+        "discounted_price": {
+            "Q1": 319.0,
+            "Q3": 4499.0,
+            "IQR": 4180.0,
+            "lower_bound": 0,
+            "upper_bound": 10769.0,
+            "outliers_lower": "0",
+            "outliers_upper": "91",
+            "total_outliers": "91",
+            "percentage_outliers": 14.444444444444443
+        },
+        "actual_price": {
+            "Q1": 990.0,
+            "Q3": 10079.835000000001,
+            "IQR": 9089.835000000001,
+            "lower_bound": 0,
+            "upper_bound": 23714.5875,
+            "outliers_lower": "0",
+            "outliers_upper": "71",
+            "total_outliers": "71",
+            "percentage_outliers": 11.26984126984127
+        },
+        "manufacturing_cost": {
+            "Q1": 165.5,
+            "Q3": 2249.5,
+            "IQR": 2084.0,
+            "lower_bound": 0,
+            "upper_bound": 5375.5,
+            "outliers_lower": "0",
+            "outliers_upper": "92",
+            "total_outliers": "92",
+            "percentage_outliers": 14.603174603174605
+        }
+    },
+    "Climate Control": {
+        "discounted_price": {
+            "Q1": 880.0,
+            "Q3": 8962.0,
+            "IQR": 8082.0,
+            "lower_bound": 0,
+            "upper_bound": 21085.0,
+            "outliers_lower": "0",
+            "outliers_upper": "85",
+            "total_outliers": "85",
+            "percentage_outliers": 9.269356597600872
+        },
+        "actual_price": {
+            "Q1": 1999.0,
+            "Q3": 19999.0,
+            "IQR": 18000.0,
+            "lower_bound": 0,
+            "upper_bound": 46999.0,
+            "outliers_lower": "0",
+            "outliers_upper": "93",
+            "total_outliers": "93",
+            "percentage_outliers": 10.141766630316248
+        },
+        "manufacturing_cost": {
+            "Q1": 474.5,
+            "Q3": 4499.5,
+            "IQR": 4025.0,
+            "lower_bound": 0,
+            "upper_bound": 10537.0,
+            "outliers_lower": "0",
+            "outliers_upper": "91",
+            "total_outliers": "91",
+            "percentage_outliers": 9.923664122137405
+        }
+    },
+    "Home Office": {
+        "discounted_price": {
+            "Q1": 679.0,
+            "Q3": 6999.0,
+            "IQR": 6320.0,
+            "lower_bound": 0,
+            "upper_bound": 16479.0,
+            "outliers_lower": "0",
+            "outliers_upper": "136",
+            "total_outliers": "136",
+            "percentage_outliers": 10.683424980361352
+        },
+        "actual_price": {
+            "Q1": 1799.0,
+            "Q3": 15999.0,
+            "IQR": 14200.0,
+            "lower_bound": 0,
+            "upper_bound": 37299.0,
+            "outliers_lower": "0",
+            "outliers_upper": "146",
+            "total_outliers": "146",
+            "percentage_outliers": 11.468970934799685
+        },
+        "manufacturing_cost": {
+            "Q1": 364.5,
+            "Q3": 3649.0,
+            "IQR": 3284.5,
+            "lower_bound": 0,
+            "upper_bound": 8575.75,
+            "outliers_lower": "0",
+            "outliers_upper": "128",
+            "total_outliers": "128",
+            "percentage_outliers": 10.054988216810685
+        }
+    },
+    "Cameras": {
+        "discounted_price": {
+            "Q1": 499.0,
+            "Q3": 4691.5,
+            "IQR": 4192.5,
+            "lower_bound": 0,
+            "upper_bound": 10980.25,
+            "outliers_lower": "0",
+            "outliers_upper": "119",
+            "total_outliers": "119",
+            "percentage_outliers": 14.547677261613693
+        },
+        "actual_price": {
+            "Q1": 1296.0,
+            "Q3": 10000.0,
+            "IQR": 8704.0,
+            "lower_bound": 0,
+            "upper_bound": 23056.0,
+            "outliers_lower": "0",
+            "outliers_upper": "119",
+            "total_outliers": "119",
+            "percentage_outliers": 14.547677261613693
+        },
+        "manufacturing_cost": {
+            "Q1": 284.5,
+            "Q3": 2532.75,
+            "IQR": 2248.25,
+            "lower_bound": 0,
+            "upper_bound": 5905.125,
+            "outliers_lower": "0",
+            "outliers_upper": "116",
+            "total_outliers": "116",
+            "percentage_outliers": 14.180929095354522
+        }
+    },
+    "Home Improvement": {
+        "discounted_price": {
+            "Q1": 310.0,
+            "Q3": 2269.0,
+            "IQR": 1959.0,
+            "lower_bound": 0,
+            "upper_bound": 5207.5,
+            "outliers_lower": "0",
+            "outliers_upper": "175",
+            "total_outliers": "175",
+            "percentage_outliers": 7.6053889613211645
+        },
+        "actual_price": {
+            "Q1": 800.0,
+            "Q3": 5460.0,
+            "IQR": 4660.0,
+            "lower_bound": 0,
+            "upper_bound": 12450.0,
+            "outliers_lower": "0",
+            "outliers_upper": "256",
+            "total_outliers": "256",
+            "percentage_outliers": 11.125597566275532
+        },
+        "manufacturing_cost": {
+            "Q1": 194.5,
+            "Q3": 1151.0,
+            "IQR": 956.5,
+            "lower_bound": 0,
+            "upper_bound": 2585.75,
+            "outliers_lower": "0",
+            "outliers_upper": "182",
+            "total_outliers": "182",
+            "percentage_outliers": 7.909604519774012
+        }
+    }
+}

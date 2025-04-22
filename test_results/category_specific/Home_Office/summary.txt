@@ -1,0 +1,20 @@
+Pricing Analysis Summary for Home Office
+==================================================
+
+Benchmark Data:
+  Median Price: ₹3839.00
+  25th Percentile (Q1): ₹679.00
+  75th Percentile (Q3): ₹6999.00
+  Min Price: ₹1919.50
+  Max Price: ₹5758.50
+
+Price Prediction (relative to median): 0.78x
+
+Strategy Distribution:
+  Premium Cost Recovery: 18 cases (78.3%)
+  Cost Reconsideration Required: 5 cases (21.7%)
+
+Viability issues detected: 5 cases
+High cost warnings issued: 0 cases
+
+Manufacturing Cost Analysis:

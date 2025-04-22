@@ -1,0 +1,23 @@
+Pricing Analysis Summary for Smartwatches
+==================================================
+
+Benchmark Data:
+  Median Price: ₹2409.00
+  25th Percentile (Q1): ₹319.00
+  75th Percentile (Q3): ₹4499.00
+  Min Price: ₹1204.50
+  Max Price: ₹3613.50
+
+Price Prediction (relative to median): 0.81x
+
+Strategy Distribution:
+  Thin-Margin Volume Strategy: 16 cases (69.6%)
+  Cost Reconsideration Required: 4 cases (17.4%)
+  Premium Cost Recovery: 1 cases (4.3%)
+  Brand Premium Strategy: 1 cases (4.3%)
+  Undercut Competitors Strategy: 1 cases (4.3%)
+
+Viability issues detected: 4 cases
+High cost warnings issued: 1 cases
+
+Manufacturing Cost Analysis:

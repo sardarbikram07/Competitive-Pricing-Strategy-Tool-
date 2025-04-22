@@ -1,0 +1,18 @@
+{
+    "category": "Kitchen Appliances",
+    "predicted_market_price": 653.39677734375,
+    "manufacturing_cost": 400.0,
+    "recommended_price": 490.04758300781253,
+    "min_competitive_price": 490.04758300781253,
+    "max_competitive_price": 555.3872607421876,
+    "minimum_viable_price": 434.78260869565213,
+    "profit_margin": 0.1837527336735726,
+    "profit_margin_percentage": 18.37527336735726,
+    "discount_from_market": 25.0,
+    "market_saturation": "high",
+    "brand_strength": "high",
+    "price_elasticity": -1.5,
+    "estimated_sales_impact": 37.5,
+    "strategy": "Deep Discount Strategy",
+    "market_position_percentile": 22.09412006347216
+}

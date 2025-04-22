@@ -1,0 +1,20 @@
+Pricing Analysis Summary for Home Improvement
+==================================================
+
+Benchmark Data:
+  Median Price: ₹1289.50
+  25th Percentile (Q1): ₹310.00
+  75th Percentile (Q3): ₹2269.00
+  Min Price: ₹644.75
+  Max Price: ₹1934.25
+
+Price Prediction (relative to median): 0.76x
+
+Strategy Distribution:
+  Premium Cost Recovery: 18 cases (78.3%)
+  Cost Reconsideration Required: 5 cases (21.7%)
+
+Viability issues detected: 5 cases
+High cost warnings issued: 0 cases
+
+Manufacturing Cost Analysis:

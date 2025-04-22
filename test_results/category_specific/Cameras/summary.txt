@@ -1,0 +1,20 @@
+Pricing Analysis Summary for Cameras
+==================================================
+
+Benchmark Data:
+  Median Price: ₹2595.25
+  25th Percentile (Q1): ₹499.00
+  75th Percentile (Q3): ₹4691.50
+  Min Price: ₹1297.62
+  Max Price: ₹3892.88
+
+Price Prediction (relative to median): 0.77x
+
+Strategy Distribution:
+  Premium Cost Recovery: 18 cases (78.3%)
+  Cost Reconsideration Required: 5 cases (21.7%)
+
+Viability issues detected: 5 cases
+High cost warnings issued: 0 cases
+
+Manufacturing Cost Analysis:

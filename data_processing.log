@@ -1,0 +1,505 @@
+2025-04-14 19:48:52,395 - INFO - Starting improved data preparation process
+2025-04-14 19:48:52,396 - INFO - Loading dataset from data/raw/amazon_products.csv
+2025-04-14 19:48:52,402 - ERROR - Error loading dataset: [Errno 2] No such file or directory: 'data/raw/amazon_products.csv'
+2025-04-14 19:48:52,402 - ERROR - Error in data preparation process: [Errno 2] No such file or directory: 'data/raw/amazon_products.csv'
+Traceback (most recent call last):
+  File "/mnt/c/Users/dell laptop/Desktop/final/improved_data_preparation.py", line 384, in main
+    df = load_dataset()
+  File "/mnt/c/Users/dell laptop/Desktop/final/improved_data_preparation.py", line 37, in load_dataset
+    df = pd.read_csv(file_path)
+  File "/home/alapan/.local/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 912, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/alapan/.local/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 577, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/alapan/.local/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1407, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/alapan/.local/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1661, in _make_engine
+    self.handles = get_handle(
+  File "/home/alapan/.local/lib/python3.10/site-packages/pandas/io/common.py", line 859, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'data/raw/amazon_products.csv'
+2025-04-14 19:49:39,881 - INFO - Starting improved data preparation process
+2025-04-14 19:49:39,882 - INFO - Loading dataset from clean_dataset.csv
+2025-04-14 19:49:40,119 - INFO - Loaded dataset with 10521 rows and 33 columns
+2025-04-14 19:49:40,119 - INFO - Starting data cleaning process
+2025-04-14 19:49:40,125 - INFO - Missing values before cleaning:
+Series([], dtype: int64)
+2025-04-14 19:49:40,258 - INFO - Removed 0 duplicate rows
+2025-04-14 19:49:40,299 - WARNING - Found 656 invalid discount percentages
+2025-04-14 19:49:40,364 - INFO - Standardized 10 category names
+2025-04-14 19:49:40,365 - INFO - Data cleaning complete. Rows before: 10521, Rows after: 10521
+2025-04-14 19:49:40,366 - INFO - Cleaned dataset: 10521 rows, 33 columns
+2025-04-14 19:49:40,741 - INFO - Saved cleaned dataset
+2025-04-14 19:49:40,742 - INFO - Starting outlier handling process
+2025-04-14 19:49:40,752 - INFO - Processing outliers for category: Computers (716 products)
+2025-04-14 19:49:40,755 - INFO - Computers - discounted_price: Found 102 outliers (0 below 0.00, 102 above 8002.75)
+2025-04-14 19:49:40,758 - INFO - Capped outliers in Computers - discounted_price
+2025-04-14 19:49:40,760 - INFO - Computers - actual_price: Found 99 outliers (0 below 0.00, 99 above 17903.00)
+2025-04-14 19:49:40,771 - INFO - Capped outliers in Computers - actual_price
+2025-04-14 19:49:40,773 - INFO - Computers - manufacturing_cost: Found 102 outliers (0 below 0.00, 102 above 4061.31)
+2025-04-14 19:49:40,786 - INFO - Capped outliers in Computers - manufacturing_cost
+2025-04-14 19:49:40,789 - INFO - Processing outliers for category: Mobile Accessories (817 products)
+2025-04-14 19:49:40,794 - INFO - Mobile Accessories - discounted_price: Found 51 outliers (0 below 0.00, 51 above 2323.50)
+2025-04-14 19:49:40,804 - INFO - Capped outliers in Mobile Accessories - discounted_price
+2025-04-14 19:49:40,807 - INFO - Mobile Accessories - actual_price: Found 80 outliers (0 below 0.00, 80 above 6374.00)
+2025-04-14 19:49:40,818 - INFO - Capped outliers in Mobile Accessories - actual_price
+2025-04-14 19:49:40,821 - INFO - Mobile Accessories - manufacturing_cost: Found 52 outliers (0 below 0.00, 52 above 1160.75)
+2025-04-14 19:49:40,834 - INFO - Capped outliers in Mobile Accessories - manufacturing_cost
+2025-04-14 19:49:40,836 - INFO - Processing outliers for category: Home Entertainment (868 products)
+2025-04-14 19:49:40,839 - INFO - Home Entertainment - discounted_price: Found 88 outliers (0 below 0.00, 88 above 13929.62)
+2025-04-14 19:49:40,842 - INFO - Capped outliers in Home Entertainment - discounted_price
+2025-04-14 19:49:40,847 - INFO - Home Entertainment - actual_price: Found 96 outliers (0 below 0.00, 96 above 35549.00)
+2025-04-14 19:49:40,857 - INFO - Capped outliers in Home Entertainment - actual_price
+2025-04-14 19:49:40,862 - INFO - Home Entertainment - manufacturing_cost: Found 81 outliers (0 below 0.00, 81 above 7087.75)
+2025-04-14 19:49:40,873 - INFO - Capped outliers in Home Entertainment - manufacturing_cost
+2025-04-14 19:49:40,875 - INFO - Processing outliers for category: Kitchen Appliances (863 products)
+2025-04-14 19:49:40,878 - INFO - Kitchen Appliances - discounted_price: Found 74 outliers (0 below 0.00, 74 above 6783.25)
+2025-04-14 19:49:40,882 - INFO - Capped outliers in Kitchen Appliances - discounted_price
+2025-04-14 19:49:40,889 - INFO - Kitchen Appliances - actual_price: Found 109 outliers (0 below 0.00, 109 above 13932.75)
+2025-04-14 19:49:40,891 - INFO - Capped outliers in Kitchen Appliances - actual_price
+2025-04-14 19:49:40,894 - INFO - Kitchen Appliances - manufacturing_cost: Found 71 outliers (0 below 0.00, 71 above 3569.75)
+2025-04-14 19:49:40,897 - INFO - Capped outliers in Kitchen Appliances - manufacturing_cost
+2025-04-14 19:49:40,899 - INFO - Processing outliers for category: Audio (1318 products)
+2025-04-14 19:49:40,904 - INFO - Audio - discounted_price: Found 152 outliers (0 below 0.00, 152 above 23476.50)
+2025-04-14 19:49:40,907 - INFO - Capped outliers in Audio - discounted_price
+2025-04-14 19:49:40,910 - INFO - Audio - actual_price: Found 154 outliers (0 below 0.00, 154 above 45964.62)
+2025-04-14 19:49:40,915 - INFO - Capped outliers in Audio - actual_price
+2025-04-14 19:49:40,921 - INFO - Audio - manufacturing_cost: Found 152 outliers (0 below 0.00, 152 above 12193.19)
+2025-04-14 19:49:40,927 - INFO - Capped outliers in Audio - manufacturing_cost
+2025-04-14 19:49:40,930 - INFO - Processing outliers for category: Smartwatches (630 products)
+2025-04-14 19:49:40,937 - INFO - Smartwatches - discounted_price: Found 91 outliers (0 below 0.00, 91 above 10769.00)
+2025-04-14 19:49:40,943 - INFO - Capped outliers in Smartwatches - discounted_price
+2025-04-14 19:49:40,955 - INFO - Smartwatches - actual_price: Found 71 outliers (0 below 0.00, 71 above 23714.59)
+2025-04-14 19:49:40,957 - INFO - Capped outliers in Smartwatches - actual_price
+2025-04-14 19:49:40,964 - INFO - Smartwatches - manufacturing_cost: Found 92 outliers (0 below 0.00, 92 above 5375.50)
+2025-04-14 19:49:40,968 - INFO - Capped outliers in Smartwatches - manufacturing_cost
+2025-04-14 19:49:40,970 - INFO - Processing outliers for category: Climate Control (917 products)
+2025-04-14 19:49:40,973 - INFO - Climate Control - discounted_price: Found 85 outliers (0 below 0.00, 85 above 21085.00)
+2025-04-14 19:49:40,976 - INFO - Capped outliers in Climate Control - discounted_price
+2025-04-14 19:49:40,987 - INFO - Climate Control - actual_price: Found 93 outliers (0 below 0.00, 93 above 46999.00)
+2025-04-14 19:49:40,990 - INFO - Capped outliers in Climate Control - actual_price
+2025-04-14 19:49:40,992 - INFO - Climate Control - manufacturing_cost: Found 91 outliers (0 below 0.00, 91 above 10537.00)
+2025-04-14 19:49:40,997 - INFO - Capped outliers in Climate Control - manufacturing_cost
+2025-04-14 19:49:41,003 - INFO - Processing outliers for category: Home Office (1273 products)
+2025-04-14 19:49:41,005 - INFO - Home Office - discounted_price: Found 136 outliers (0 below 0.00, 136 above 16479.00)
+2025-04-14 19:49:41,008 - INFO - Capped outliers in Home Office - discounted_price
+2025-04-14 19:49:41,014 - INFO - Home Office - actual_price: Found 146 outliers (0 below 0.00, 146 above 37299.00)
+2025-04-14 19:49:41,019 - INFO - Capped outliers in Home Office - actual_price
+2025-04-14 19:49:41,025 - INFO - Home Office - manufacturing_cost: Found 128 outliers (0 below 0.00, 128 above 8575.75)
+2025-04-14 19:49:41,028 - INFO - Capped outliers in Home Office - manufacturing_cost
+2025-04-14 19:49:41,033 - INFO - Processing outliers for category: Cameras (818 products)
+2025-04-14 19:49:41,036 - INFO - Cameras - discounted_price: Found 119 outliers (0 below 0.00, 119 above 10980.25)
+2025-04-14 19:49:41,039 - INFO - Capped outliers in Cameras - discounted_price
+2025-04-14 19:49:41,049 - INFO - Cameras - actual_price: Found 119 outliers (0 below 0.00, 119 above 23056.00)
+2025-04-14 19:49:41,052 - INFO - Capped outliers in Cameras - actual_price
+2025-04-14 19:49:41,054 - INFO - Cameras - manufacturing_cost: Found 116 outliers (0 below 0.00, 116 above 5905.12)
+2025-04-14 19:49:41,057 - INFO - Capped outliers in Cameras - manufacturing_cost
+2025-04-14 19:49:41,060 - INFO - Processing outliers for category: Home Improvement (2301 products)
+2025-04-14 19:49:41,071 - INFO - Home Improvement - discounted_price: Found 175 outliers (0 below 0.00, 175 above 5207.50)
+2025-04-14 19:49:41,075 - INFO - Capped outliers in Home Improvement - discounted_price
+2025-04-14 19:49:41,086 - INFO - Home Improvement - actual_price: Found 256 outliers (0 below 0.00, 256 above 12450.00)
+2025-04-14 19:49:41,089 - INFO - Capped outliers in Home Improvement - actual_price
+2025-04-14 19:49:41,092 - INFO - Home Improvement - manufacturing_cost: Found 182 outliers (0 below 0.00, 182 above 2585.75)
+2025-04-14 19:49:41,095 - INFO - Capped outliers in Home Improvement - manufacturing_cost
+2025-04-14 19:49:41,108 - INFO - Outlier handling complete
+2025-04-14 19:49:41,108 - INFO - Processed dataset with outlier handling: 10521 rows
+2025-04-14 19:49:41,114 - INFO - Creating price-related features
+2025-04-14 19:49:41,252 - INFO - Created price features: 
+2025-04-14 19:49:41,255 - INFO - Added price features: 41 total columns
+2025-04-14 19:49:41,255 - INFO - Encoding categorical features
+2025-04-14 19:49:41,297 - INFO - Created brand tiers with 3274 brands
+2025-04-14 19:49:41,312 - ERROR - Error in data preparation process: "['brand_tier'] not in index"
+Traceback (most recent call last):
+  File "/mnt/c/Users/dell laptop/Desktop/final/improved_data_preparation.py", line 404, in main
+    df_encoded = encode_categorical_features(df_processed)
+  File "/mnt/c/Users/dell laptop/Desktop/final/improved_data_preparation.py", line 285, in encode_categorical_features
+    df_encoded = pd.get_dummies(
+  File "/home/alapan/.local/lib/python3.10/site-packages/pandas/core/reshape/encoding.py", line 158, in get_dummies
+    data_to_encode = data[columns]
+  File "/home/alapan/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 3767, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/home/alapan/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 5877, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/home/alapan/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 5941, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['brand_tier'] not in index"
+2025-04-14 19:51:55,097 - INFO - Starting improved data preparation process
+2025-04-14 19:51:55,098 - INFO - Loading dataset from clean_dataset.csv
+2025-04-14 19:51:55,233 - INFO - Loaded dataset with 10521 rows and 33 columns
+2025-04-14 19:51:55,234 - INFO - Starting data cleaning process
+2025-04-14 19:51:55,240 - INFO - Missing values before cleaning:
+Series([], dtype: int64)
+2025-04-14 19:51:55,279 - INFO - Removed 0 duplicate rows
+2025-04-14 19:51:55,281 - WARNING - Found 656 invalid discount percentages
+2025-04-14 19:51:55,292 - INFO - Standardized 10 category names
+2025-04-14 19:51:55,293 - INFO - Data cleaning complete. Rows before: 10521, Rows after: 10521
+2025-04-14 19:51:55,294 - INFO - Cleaned dataset: 10521 rows, 33 columns
+2025-04-14 19:51:55,615 - INFO - Saved cleaned dataset
+2025-04-14 19:51:55,615 - INFO - Starting outlier handling process
+2025-04-14 19:51:55,626 - INFO - Processing outliers for category: Computers (716 products)
+2025-04-14 19:51:55,629 - INFO - Computers - discounted_price: Found 102 outliers (0 below 0.00, 102 above 8002.75)
+2025-04-14 19:51:55,631 - INFO - Capped outliers in Computers - discounted_price
+2025-04-14 19:51:55,634 - INFO - Computers - actual_price: Found 99 outliers (0 below 0.00, 99 above 17903.00)
+2025-04-14 19:51:55,636 - INFO - Capped outliers in Computers - actual_price
+2025-04-14 19:51:55,640 - INFO - Computers - manufacturing_cost: Found 102 outliers (0 below 0.00, 102 above 4061.31)
+2025-04-14 19:51:55,643 - INFO - Capped outliers in Computers - manufacturing_cost
+2025-04-14 19:51:55,644 - INFO - Processing outliers for category: Mobile Accessories (817 products)
+2025-04-14 19:51:55,648 - INFO - Mobile Accessories - discounted_price: Found 51 outliers (0 below 0.00, 51 above 2323.50)
+2025-04-14 19:51:55,651 - INFO - Capped outliers in Mobile Accessories - discounted_price
+2025-04-14 19:51:55,653 - INFO - Mobile Accessories - actual_price: Found 80 outliers (0 below 0.00, 80 above 6374.00)
+2025-04-14 19:51:55,655 - INFO - Capped outliers in Mobile Accessories - actual_price
+2025-04-14 19:51:55,658 - INFO - Mobile Accessories - manufacturing_cost: Found 52 outliers (0 below 0.00, 52 above 1160.75)
+2025-04-14 19:51:55,663 - INFO - Capped outliers in Mobile Accessories - manufacturing_cost
+2025-04-14 19:51:55,667 - INFO - Processing outliers for category: Home Entertainment (868 products)
+2025-04-14 19:51:55,671 - INFO - Home Entertainment - discounted_price: Found 88 outliers (0 below 0.00, 88 above 13929.62)
+2025-04-14 19:51:55,673 - INFO - Capped outliers in Home Entertainment - discounted_price
+2025-04-14 19:51:55,676 - INFO - Home Entertainment - actual_price: Found 96 outliers (0 below 0.00, 96 above 35549.00)
+2025-04-14 19:51:55,678 - INFO - Capped outliers in Home Entertainment - actual_price
+2025-04-14 19:51:55,681 - INFO - Home Entertainment - manufacturing_cost: Found 81 outliers (0 below 0.00, 81 above 7087.75)
+2025-04-14 19:51:55,686 - INFO - Capped outliers in Home Entertainment - manufacturing_cost
+2025-04-14 19:51:55,688 - INFO - Processing outliers for category: Kitchen Appliances (863 products)
+2025-04-14 19:51:55,690 - INFO - Kitchen Appliances - discounted_price: Found 74 outliers (0 below 0.00, 74 above 6783.25)
+2025-04-14 19:51:55,692 - INFO - Capped outliers in Kitchen Appliances - discounted_price
+2025-04-14 19:51:55,694 - INFO - Kitchen Appliances - actual_price: Found 109 outliers (0 below 0.00, 109 above 13932.75)
+2025-04-14 19:51:55,697 - INFO - Capped outliers in Kitchen Appliances - actual_price
+2025-04-14 19:51:55,701 - INFO - Kitchen Appliances - manufacturing_cost: Found 71 outliers (0 below 0.00, 71 above 3569.75)
+2025-04-14 19:51:55,704 - INFO - Capped outliers in Kitchen Appliances - manufacturing_cost
+2025-04-14 19:51:55,707 - INFO - Processing outliers for category: Audio (1318 products)
+2025-04-14 19:51:55,711 - INFO - Audio - discounted_price: Found 152 outliers (0 below 0.00, 152 above 23476.50)
+2025-04-14 19:51:55,714 - INFO - Capped outliers in Audio - discounted_price
+2025-04-14 19:51:55,720 - INFO - Audio - actual_price: Found 154 outliers (0 below 0.00, 154 above 45964.62)
+2025-04-14 19:51:55,722 - INFO - Capped outliers in Audio - actual_price
+2025-04-14 19:51:55,724 - INFO - Audio - manufacturing_cost: Found 152 outliers (0 below 0.00, 152 above 12193.19)
+2025-04-14 19:51:55,728 - INFO - Capped outliers in Audio - manufacturing_cost
+2025-04-14 19:51:55,729 - INFO - Processing outliers for category: Smartwatches (630 products)
+2025-04-14 19:51:55,732 - INFO - Smartwatches - discounted_price: Found 91 outliers (0 below 0.00, 91 above 10769.00)
+2025-04-14 19:51:55,736 - INFO - Capped outliers in Smartwatches - discounted_price
+2025-04-14 19:51:55,739 - INFO - Smartwatches - actual_price: Found 71 outliers (0 below 0.00, 71 above 23714.59)
+2025-04-14 19:51:55,742 - INFO - Capped outliers in Smartwatches - actual_price
+2025-04-14 19:51:55,744 - INFO - Smartwatches - manufacturing_cost: Found 92 outliers (0 below 0.00, 92 above 5375.50)
+2025-04-14 19:51:55,746 - INFO - Capped outliers in Smartwatches - manufacturing_cost
+2025-04-14 19:51:55,751 - INFO - Processing outliers for category: Climate Control (917 products)
+2025-04-14 19:51:55,754 - INFO - Climate Control - discounted_price: Found 85 outliers (0 below 0.00, 85 above 21085.00)
+2025-04-14 19:51:55,757 - INFO - Capped outliers in Climate Control - discounted_price
+2025-04-14 19:51:55,763 - INFO - Climate Control - actual_price: Found 93 outliers (0 below 0.00, 93 above 46999.00)
+2025-04-14 19:51:55,767 - INFO - Capped outliers in Climate Control - actual_price
+2025-04-14 19:51:55,770 - INFO - Climate Control - manufacturing_cost: Found 91 outliers (0 below 0.00, 91 above 10537.00)
+2025-04-14 19:51:55,773 - INFO - Capped outliers in Climate Control - manufacturing_cost
+2025-04-14 19:51:55,774 - INFO - Processing outliers for category: Home Office (1273 products)
+2025-04-14 19:51:55,776 - INFO - Home Office - discounted_price: Found 136 outliers (0 below 0.00, 136 above 16479.00)
+2025-04-14 19:51:55,778 - INFO - Capped outliers in Home Office - discounted_price
+2025-04-14 19:51:55,781 - INFO - Home Office - actual_price: Found 146 outliers (0 below 0.00, 146 above 37299.00)
+2025-04-14 19:51:55,784 - INFO - Capped outliers in Home Office - actual_price
+2025-04-14 19:51:55,788 - INFO - Home Office - manufacturing_cost: Found 128 outliers (0 below 0.00, 128 above 8575.75)
+2025-04-14 19:51:55,790 - INFO - Capped outliers in Home Office - manufacturing_cost
+2025-04-14 19:51:55,792 - INFO - Processing outliers for category: Cameras (818 products)
+2025-04-14 19:51:55,794 - INFO - Cameras - discounted_price: Found 119 outliers (0 below 0.00, 119 above 10980.25)
+2025-04-14 19:51:55,797 - INFO - Capped outliers in Cameras - discounted_price
+2025-04-14 19:51:55,800 - INFO - Cameras - actual_price: Found 119 outliers (0 below 0.00, 119 above 23056.00)
+2025-04-14 19:51:55,803 - INFO - Capped outliers in Cameras - actual_price
+2025-04-14 19:51:55,806 - INFO - Cameras - manufacturing_cost: Found 116 outliers (0 below 0.00, 116 above 5905.12)
+2025-04-14 19:51:55,809 - INFO - Capped outliers in Cameras - manufacturing_cost
+2025-04-14 19:51:55,810 - INFO - Processing outliers for category: Home Improvement (2301 products)
+2025-04-14 19:51:55,812 - INFO - Home Improvement - discounted_price: Found 175 outliers (0 below 0.00, 175 above 5207.50)
+2025-04-14 19:51:55,814 - INFO - Capped outliers in Home Improvement - discounted_price
+2025-04-14 19:51:55,820 - INFO - Home Improvement - actual_price: Found 256 outliers (0 below 0.00, 256 above 12450.00)
+2025-04-14 19:51:55,822 - INFO - Capped outliers in Home Improvement - actual_price
+2025-04-14 19:51:55,825 - INFO - Home Improvement - manufacturing_cost: Found 182 outliers (0 below 0.00, 182 above 2585.75)
+2025-04-14 19:51:55,827 - INFO - Capped outliers in Home Improvement - manufacturing_cost
+2025-04-14 19:51:55,831 - INFO - Outlier handling complete
+2025-04-14 19:51:55,832 - INFO - Processed dataset with outlier handling: 10521 rows
+2025-04-14 19:51:55,834 - INFO - Creating price-related features
+2025-04-14 19:51:55,898 - INFO - Created price features: 
+2025-04-14 19:51:55,899 - INFO - Added price features: 41 total columns
+2025-04-14 19:51:55,901 - INFO - Encoding categorical features
+2025-04-14 19:51:55,924 - INFO - Created brand tiers with 3274 brands
+2025-04-14 19:51:56,177 - INFO - One-hot encoded 4 categorical columns
+2025-04-14 19:51:56,178 - INFO - Encoded dataset: 3498 columns after encoding
+2025-04-14 19:51:56,179 - INFO - Creating price distribution visualizations
+2025-04-14 19:52:14,106 - INFO - Price distribution visualizations complete
+2025-04-14 19:52:14,107 - INFO - Splitting dataset by category
+2025-04-14 19:52:14,107 - ERROR - Error in data preparation process: 'category'
+Traceback (most recent call last):
+  File "/home/alapan/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'category'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/dell laptop/Desktop/final/improved_data_preparation.py", line 422, in main
+    train_df, test_df = split_dataset_by_category(df_encoded)
+  File "/mnt/c/Users/dell laptop/Desktop/final/improved_data_preparation.py", line 316, in split_dataset_by_category
+    categories = df['category'].unique()
+  File "/home/alapan/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/alapan/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 'category'
+2025-04-14 19:53:11,307 - INFO - Starting improved data preparation process
+2025-04-14 19:53:11,307 - INFO - Loading dataset from clean_dataset.csv
+2025-04-14 19:53:11,430 - INFO - Loaded dataset with 10521 rows and 33 columns
+2025-04-14 19:53:11,431 - INFO - Starting data cleaning process
+2025-04-14 19:53:11,437 - INFO - Missing values before cleaning:
+Series([], dtype: int64)
+2025-04-14 19:53:11,467 - INFO - Removed 0 duplicate rows
+2025-04-14 19:53:11,470 - WARNING - Found 656 invalid discount percentages
+2025-04-14 19:53:11,479 - INFO - Standardized 10 category names
+2025-04-14 19:53:11,481 - INFO - Data cleaning complete. Rows before: 10521, Rows after: 10521
+2025-04-14 19:53:11,482 - INFO - Cleaned dataset: 10521 rows, 33 columns
+2025-04-14 19:53:11,778 - INFO - Saved cleaned dataset
+2025-04-14 19:53:11,779 - INFO - Starting outlier handling process
+2025-04-14 19:53:11,786 - INFO - Processing outliers for category: Computers (716 products)
+2025-04-14 19:53:11,788 - INFO - Computers - discounted_price: Found 102 outliers (0 below 0.00, 102 above 8002.75)
+2025-04-14 19:53:11,790 - INFO - Capped outliers in Computers - discounted_price
+2025-04-14 19:53:11,792 - INFO - Computers - actual_price: Found 99 outliers (0 below 0.00, 99 above 17903.00)
+2025-04-14 19:53:11,796 - INFO - Capped outliers in Computers - actual_price
+2025-04-14 19:53:11,800 - INFO - Computers - manufacturing_cost: Found 102 outliers (0 below 0.00, 102 above 4061.31)
+2025-04-14 19:53:11,803 - INFO - Capped outliers in Computers - manufacturing_cost
+2025-04-14 19:53:11,806 - INFO - Processing outliers for category: Mobile Accessories (817 products)
+2025-04-14 19:53:11,809 - INFO - Mobile Accessories - discounted_price: Found 51 outliers (0 below 0.00, 51 above 2323.50)
+2025-04-14 19:53:11,812 - INFO - Capped outliers in Mobile Accessories - discounted_price
+2025-04-14 19:53:11,814 - INFO - Mobile Accessories - actual_price: Found 80 outliers (0 below 0.00, 80 above 6374.00)
+2025-04-14 19:53:11,816 - INFO - Capped outliers in Mobile Accessories - actual_price
+2025-04-14 19:53:11,820 - INFO - Mobile Accessories - manufacturing_cost: Found 52 outliers (0 below 0.00, 52 above 1160.75)
+2025-04-14 19:53:11,824 - INFO - Capped outliers in Mobile Accessories - manufacturing_cost
+2025-04-14 19:53:11,830 - INFO - Processing outliers for category: Home Entertainment (868 products)
+2025-04-14 19:53:11,833 - INFO - Home Entertainment - discounted_price: Found 88 outliers (0 below 0.00, 88 above 13929.62)
+2025-04-14 19:53:11,836 - INFO - Capped outliers in Home Entertainment - discounted_price
+2025-04-14 19:53:11,838 - INFO - Home Entertainment - actual_price: Found 96 outliers (0 below 0.00, 96 above 35549.00)
+2025-04-14 19:53:11,840 - INFO - Capped outliers in Home Entertainment - actual_price
+2025-04-14 19:53:11,848 - INFO - Home Entertainment - manufacturing_cost: Found 81 outliers (0 below 0.00, 81 above 7087.75)
+2025-04-14 19:53:11,850 - INFO - Capped outliers in Home Entertainment - manufacturing_cost
+2025-04-14 19:53:11,852 - INFO - Processing outliers for category: Kitchen Appliances (863 products)
+2025-04-14 19:53:11,855 - INFO - Kitchen Appliances - discounted_price: Found 74 outliers (0 below 0.00, 74 above 6783.25)
+2025-04-14 19:53:11,857 - INFO - Capped outliers in Kitchen Appliances - discounted_price
+2025-04-14 19:53:11,867 - INFO - Kitchen Appliances - actual_price: Found 109 outliers (0 below 0.00, 109 above 13932.75)
+2025-04-14 19:53:11,870 - INFO - Capped outliers in Kitchen Appliances - actual_price
+2025-04-14 19:53:11,872 - INFO - Kitchen Appliances - manufacturing_cost: Found 71 outliers (0 below 0.00, 71 above 3569.75)
+2025-04-14 19:53:11,874 - INFO - Capped outliers in Kitchen Appliances - manufacturing_cost
+2025-04-14 19:53:11,879 - INFO - Processing outliers for category: Audio (1318 products)
+2025-04-14 19:53:11,883 - INFO - Audio - discounted_price: Found 152 outliers (0 below 0.00, 152 above 23476.50)
+2025-04-14 19:53:11,886 - INFO - Capped outliers in Audio - discounted_price
+2025-04-14 19:53:11,890 - INFO - Audio - actual_price: Found 154 outliers (0 below 0.00, 154 above 45964.62)
+2025-04-14 19:53:11,892 - INFO - Capped outliers in Audio - actual_price
+2025-04-14 19:53:11,895 - INFO - Audio - manufacturing_cost: Found 152 outliers (0 below 0.00, 152 above 12193.19)
+2025-04-14 19:53:11,904 - INFO - Capped outliers in Audio - manufacturing_cost
+2025-04-14 19:53:11,908 - INFO - Processing outliers for category: Smartwatches (630 products)
+2025-04-14 19:53:11,911 - INFO - Smartwatches - discounted_price: Found 91 outliers (0 below 0.00, 91 above 10769.00)
+2025-04-14 19:53:11,914 - INFO - Capped outliers in Smartwatches - discounted_price
+2025-04-14 19:53:11,916 - INFO - Smartwatches - actual_price: Found 71 outliers (0 below 0.00, 71 above 23714.59)
+2025-04-14 19:53:11,925 - INFO - Capped outliers in Smartwatches - actual_price
+2025-04-14 19:53:11,929 - INFO - Smartwatches - manufacturing_cost: Found 92 outliers (0 below 0.00, 92 above 5375.50)
+2025-04-14 19:53:11,931 - INFO - Capped outliers in Smartwatches - manufacturing_cost
+2025-04-14 19:53:11,933 - INFO - Processing outliers for category: Climate Control (917 products)
+2025-04-14 19:53:11,936 - INFO - Climate Control - discounted_price: Found 85 outliers (0 below 0.00, 85 above 21085.00)
+2025-04-14 19:53:11,942 - INFO - Capped outliers in Climate Control - discounted_price
+2025-04-14 19:53:11,948 - INFO - Climate Control - actual_price: Found 93 outliers (0 below 0.00, 93 above 46999.00)
+2025-04-14 19:53:11,951 - INFO - Capped outliers in Climate Control - actual_price
+2025-04-14 19:53:11,954 - INFO - Climate Control - manufacturing_cost: Found 91 outliers (0 below 0.00, 91 above 10537.00)
+2025-04-14 19:53:11,957 - INFO - Capped outliers in Climate Control - manufacturing_cost
+2025-04-14 19:53:11,960 - INFO - Processing outliers for category: Home Office (1273 products)
+2025-04-14 19:53:11,964 - INFO - Home Office - discounted_price: Found 136 outliers (0 below 0.00, 136 above 16479.00)
+2025-04-14 19:53:11,967 - INFO - Capped outliers in Home Office - discounted_price
+2025-04-14 19:53:11,971 - INFO - Home Office - actual_price: Found 146 outliers (0 below 0.00, 146 above 37299.00)
+2025-04-14 19:53:11,972 - INFO - Capped outliers in Home Office - actual_price
+2025-04-14 19:53:11,974 - INFO - Home Office - manufacturing_cost: Found 128 outliers (0 below 0.00, 128 above 8575.75)
+2025-04-14 19:53:11,979 - INFO - Capped outliers in Home Office - manufacturing_cost
+2025-04-14 19:53:11,982 - INFO - Processing outliers for category: Cameras (818 products)
+2025-04-14 19:53:11,985 - INFO - Cameras - discounted_price: Found 119 outliers (0 below 0.00, 119 above 10980.25)
+2025-04-14 19:53:11,987 - INFO - Capped outliers in Cameras - discounted_price
+2025-04-14 19:53:11,989 - INFO - Cameras - actual_price: Found 119 outliers (0 below 0.00, 119 above 23056.00)
+2025-04-14 19:53:11,991 - INFO - Capped outliers in Cameras - actual_price
+2025-04-14 19:53:11,993 - INFO - Cameras - manufacturing_cost: Found 116 outliers (0 below 0.00, 116 above 5905.12)
+2025-04-14 19:53:11,998 - INFO - Capped outliers in Cameras - manufacturing_cost
+2025-04-14 19:53:12,001 - INFO - Processing outliers for category: Home Improvement (2301 products)
+2025-04-14 19:53:12,003 - INFO - Home Improvement - discounted_price: Found 175 outliers (0 below 0.00, 175 above 5207.50)
+2025-04-14 19:53:12,005 - INFO - Capped outliers in Home Improvement - discounted_price
+2025-04-14 19:53:12,007 - INFO - Home Improvement - actual_price: Found 256 outliers (0 below 0.00, 256 above 12450.00)
+2025-04-14 19:53:12,009 - INFO - Capped outliers in Home Improvement - actual_price
+2025-04-14 19:53:12,014 - INFO - Home Improvement - manufacturing_cost: Found 182 outliers (0 below 0.00, 182 above 2585.75)
+2025-04-14 19:53:12,018 - INFO - Capped outliers in Home Improvement - manufacturing_cost
+2025-04-14 19:53:12,022 - INFO - Outlier handling complete
+2025-04-14 19:53:12,023 - INFO - Processed dataset with outlier handling: 10521 rows
+2025-04-14 19:53:12,023 - INFO - Creating price-related features
+2025-04-14 19:53:12,081 - INFO - Created price features: 
+2025-04-14 19:53:12,082 - INFO - Added price features: 41 total columns
+2025-04-14 19:53:12,083 - INFO - Encoding categorical features
+2025-04-14 19:53:12,097 - INFO - Created brand tiers with 3274 brands
+2025-04-14 19:53:12,267 - INFO - One-hot encoded 4 categorical columns
+2025-04-14 19:53:12,269 - INFO - Encoded dataset: 3499 columns after encoding
+2025-04-14 19:53:12,269 - INFO - Creating price distribution visualizations
+2025-04-14 19:53:30,059 - INFO - Price distribution visualizations complete
+2025-04-14 19:53:30,060 - INFO - Splitting dataset by category
+2025-04-14 19:53:30,068 - INFO - Splitting Computers: 716 products
+2025-04-14 19:53:30,074 - INFO - Split Computers: 572 train, 144 test
+2025-04-14 19:53:30,088 - INFO - Splitting Mobile Accessories: 817 products
+2025-04-14 19:53:30,095 - INFO - Split Mobile Accessories: 653 train, 164 test
+2025-04-14 19:53:30,106 - INFO - Splitting Home Entertainment: 868 products
+2025-04-14 19:53:30,111 - INFO - Split Home Entertainment: 694 train, 174 test
+2025-04-14 19:53:30,121 - INFO - Splitting Kitchen Appliances: 863 products
+2025-04-14 19:53:30,127 - INFO - Split Kitchen Appliances: 690 train, 173 test
+2025-04-14 19:53:30,143 - INFO - Splitting Audio: 1318 products
+2025-04-14 19:53:30,151 - INFO - Split Audio: 1054 train, 264 test
+2025-04-14 19:53:30,157 - INFO - Splitting Smartwatches: 630 products
+2025-04-14 19:53:30,162 - INFO - Split Smartwatches: 504 train, 126 test
+2025-04-14 19:53:30,169 - INFO - Splitting Climate Control: 917 products
+2025-04-14 19:53:30,175 - INFO - Split Climate Control: 733 train, 184 test
+2025-04-14 19:53:30,190 - INFO - Splitting Home Office: 1273 products
+2025-04-14 19:53:30,199 - INFO - Split Home Office: 1018 train, 255 test
+2025-04-14 19:53:30,208 - INFO - Splitting Cameras: 818 products
+2025-04-14 19:53:30,216 - INFO - Split Cameras: 654 train, 164 test
+2025-04-14 19:53:30,246 - INFO - Splitting Home Improvement: 2301 products
+2025-04-14 19:53:30,256 - INFO - Split Home Improvement: 1840 train, 461 test
+2025-04-14 19:53:30,304 - INFO - Final split: 8412 train, 2109 test
+2025-04-14 19:53:39,215 - ERROR - Error in data preparation process: 'category'
+Traceback (most recent call last):
+  File "/home/alapan/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'category'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/dell laptop/Desktop/final/improved_data_preparation.py", line 441, in main
+    categories = df_encoded['category'].unique()
+  File "/home/alapan/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/alapan/.local/lib/python3.10/site-packages/pandas/core/indexes/base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 'category'
+2025-04-14 19:54:24,086 - INFO - Starting improved data preparation process
+2025-04-14 19:54:24,087 - INFO - Loading dataset from clean_dataset.csv
+2025-04-14 19:54:24,316 - INFO - Loaded dataset with 10521 rows and 33 columns
+2025-04-14 19:54:24,316 - INFO - Starting data cleaning process
+2025-04-14 19:54:24,331 - INFO - Missing values before cleaning:
+Series([], dtype: int64)
+2025-04-14 19:54:24,366 - INFO - Removed 0 duplicate rows
+2025-04-14 19:54:24,370 - WARNING - Found 656 invalid discount percentages
+2025-04-14 19:54:24,384 - INFO - Standardized 10 category names
+2025-04-14 19:54:24,385 - INFO - Data cleaning complete. Rows before: 10521, Rows after: 10521
+2025-04-14 19:54:24,386 - INFO - Cleaned dataset: 10521 rows, 33 columns
+2025-04-14 19:54:24,766 - INFO - Saved cleaned dataset
+2025-04-14 19:54:24,766 - INFO - Starting outlier handling process
+2025-04-14 19:54:24,773 - INFO - Processing outliers for category: Computers (716 products)
+2025-04-14 19:54:24,776 - INFO - Computers - discounted_price: Found 102 outliers (0 below 0.00, 102 above 8002.75)
+2025-04-14 19:54:24,779 - INFO - Capped outliers in Computers - discounted_price
+2025-04-14 19:54:24,790 - INFO - Computers - actual_price: Found 99 outliers (0 below 0.00, 99 above 17903.00)
+2025-04-14 19:54:24,793 - INFO - Capped outliers in Computers - actual_price
+2025-04-14 19:54:24,796 - INFO - Computers - manufacturing_cost: Found 102 outliers (0 below 0.00, 102 above 4061.31)
+2025-04-14 19:54:24,799 - INFO - Capped outliers in Computers - manufacturing_cost
+2025-04-14 19:54:24,801 - INFO - Processing outliers for category: Mobile Accessories (817 products)
+2025-04-14 19:54:24,811 - INFO - Mobile Accessories - discounted_price: Found 51 outliers (0 below 0.00, 51 above 2323.50)
+2025-04-14 19:54:24,818 - INFO - Capped outliers in Mobile Accessories - discounted_price
+2025-04-14 19:54:24,830 - INFO - Mobile Accessories - actual_price: Found 80 outliers (0 below 0.00, 80 above 6374.00)
+2025-04-14 19:54:24,834 - INFO - Capped outliers in Mobile Accessories - actual_price
+2025-04-14 19:54:24,837 - INFO - Mobile Accessories - manufacturing_cost: Found 52 outliers (0 below 0.00, 52 above 1160.75)
+2025-04-14 19:54:24,840 - INFO - Capped outliers in Mobile Accessories - manufacturing_cost
+2025-04-14 19:54:24,843 - INFO - Processing outliers for category: Home Entertainment (868 products)
+2025-04-14 19:54:24,847 - INFO - Home Entertainment - discounted_price: Found 88 outliers (0 below 0.00, 88 above 13929.62)
+2025-04-14 19:54:24,852 - INFO - Capped outliers in Home Entertainment - discounted_price
+2025-04-14 19:54:24,854 - INFO - Home Entertainment - actual_price: Found 96 outliers (0 below 0.00, 96 above 35549.00)
+2025-04-14 19:54:24,857 - INFO - Capped outliers in Home Entertainment - actual_price
+2025-04-14 19:54:24,859 - INFO - Home Entertainment - manufacturing_cost: Found 81 outliers (0 below 0.00, 81 above 7087.75)
+2025-04-14 19:54:24,863 - INFO - Capped outliers in Home Entertainment - manufacturing_cost
+2025-04-14 19:54:24,868 - INFO - Processing outliers for category: Kitchen Appliances (863 products)
+2025-04-14 19:54:24,871 - INFO - Kitchen Appliances - discounted_price: Found 74 outliers (0 below 0.00, 74 above 6783.25)
+2025-04-14 19:54:24,876 - INFO - Capped outliers in Kitchen Appliances - discounted_price
+2025-04-14 19:54:24,879 - INFO - Kitchen Appliances - actual_price: Found 109 outliers (0 below 0.00, 109 above 13932.75)
+2025-04-14 19:54:24,881 - INFO - Capped outliers in Kitchen Appliances - actual_price
+2025-04-14 19:54:24,885 - INFO - Kitchen Appliances - manufacturing_cost: Found 71 outliers (0 below 0.00, 71 above 3569.75)
+2025-04-14 19:54:24,890 - INFO - Capped outliers in Kitchen Appliances - manufacturing_cost
+2025-04-14 19:54:24,894 - INFO - Processing outliers for category: Audio (1318 products)
+2025-04-14 19:54:24,898 - INFO - Audio - discounted_price: Found 152 outliers (0 below 0.00, 152 above 23476.50)
+2025-04-14 19:54:24,901 - INFO - Capped outliers in Audio - discounted_price
+2025-04-14 19:54:24,903 - INFO - Audio - actual_price: Found 154 outliers (0 below 0.00, 154 above 45964.62)
+2025-04-14 19:54:24,906 - INFO - Capped outliers in Audio - actual_price
+2025-04-14 19:54:24,912 - INFO - Audio - manufacturing_cost: Found 152 outliers (0 below 0.00, 152 above 12193.19)
+2025-04-14 19:54:24,917 - INFO - Capped outliers in Audio - manufacturing_cost
+2025-04-14 19:54:24,919 - INFO - Processing outliers for category: Smartwatches (630 products)
+2025-04-14 19:54:24,921 - INFO - Smartwatches - discounted_price: Found 91 outliers (0 below 0.00, 91 above 10769.00)
+2025-04-14 19:54:24,925 - INFO - Capped outliers in Smartwatches - discounted_price
+2025-04-14 19:54:24,928 - INFO - Smartwatches - actual_price: Found 71 outliers (0 below 0.00, 71 above 23714.59)
+2025-04-14 19:54:24,930 - INFO - Capped outliers in Smartwatches - actual_price
+2025-04-14 19:54:24,932 - INFO - Smartwatches - manufacturing_cost: Found 92 outliers (0 below 0.00, 92 above 5375.50)
+2025-04-14 19:54:24,936 - INFO - Capped outliers in Smartwatches - manufacturing_cost
+2025-04-14 19:54:24,943 - INFO - Processing outliers for category: Climate Control (917 products)
+2025-04-14 19:54:24,945 - INFO - Climate Control - discounted_price: Found 85 outliers (0 below 0.00, 85 above 21085.00)
+2025-04-14 19:54:24,949 - INFO - Capped outliers in Climate Control - discounted_price
+2025-04-14 19:54:24,958 - INFO - Climate Control - actual_price: Found 93 outliers (0 below 0.00, 93 above 46999.00)
+2025-04-14 19:54:24,962 - INFO - Capped outliers in Climate Control - actual_price
+2025-04-14 19:54:24,965 - INFO - Climate Control - manufacturing_cost: Found 91 outliers (0 below 0.00, 91 above 10537.00)
+2025-04-14 19:54:24,968 - INFO - Capped outliers in Climate Control - manufacturing_cost
+2025-04-14 19:54:24,974 - INFO - Processing outliers for category: Home Office (1273 products)
+2025-04-14 19:54:24,977 - INFO - Home Office - discounted_price: Found 136 outliers (0 below 0.00, 136 above 16479.00)
+2025-04-14 19:54:24,979 - INFO - Capped outliers in Home Office - discounted_price
+2025-04-14 19:54:24,981 - INFO - Home Office - actual_price: Found 146 outliers (0 below 0.00, 146 above 37299.00)
+2025-04-14 19:54:24,984 - INFO - Capped outliers in Home Office - actual_price
+2025-04-14 19:54:24,987 - INFO - Home Office - manufacturing_cost: Found 128 outliers (0 below 0.00, 128 above 8575.75)
+2025-04-14 19:54:24,991 - INFO - Capped outliers in Home Office - manufacturing_cost
+2025-04-14 19:54:24,993 - INFO - Processing outliers for category: Cameras (818 products)
+2025-04-14 19:54:24,998 - INFO - Cameras - discounted_price: Found 119 outliers (0 below 0.00, 119 above 10980.25)
+2025-04-14 19:54:25,000 - INFO - Capped outliers in Cameras - discounted_price
+2025-04-14 19:54:25,002 - INFO - Cameras - actual_price: Found 119 outliers (0 below 0.00, 119 above 23056.00)
+2025-04-14 19:54:25,003 - INFO - Capped outliers in Cameras - actual_price
+2025-04-14 19:54:25,006 - INFO - Cameras - manufacturing_cost: Found 116 outliers (0 below 0.00, 116 above 5905.12)
+2025-04-14 19:54:25,008 - INFO - Capped outliers in Cameras - manufacturing_cost
+2025-04-14 19:54:25,011 - INFO - Processing outliers for category: Home Improvement (2301 products)
+2025-04-14 19:54:25,015 - INFO - Home Improvement - discounted_price: Found 175 outliers (0 below 0.00, 175 above 5207.50)
+2025-04-14 19:54:25,017 - INFO - Capped outliers in Home Improvement - discounted_price
+2025-04-14 19:54:25,019 - INFO - Home Improvement - actual_price: Found 256 outliers (0 below 0.00, 256 above 12450.00)
+2025-04-14 19:54:25,021 - INFO - Capped outliers in Home Improvement - actual_price
+2025-04-14 19:54:25,025 - INFO - Home Improvement - manufacturing_cost: Found 182 outliers (0 below 0.00, 182 above 2585.75)
+2025-04-14 19:54:25,028 - INFO - Capped outliers in Home Improvement - manufacturing_cost
+2025-04-14 19:54:25,033 - INFO - Outlier handling complete
+2025-04-14 19:54:25,034 - INFO - Processed dataset with outlier handling: 10521 rows
+2025-04-14 19:54:25,035 - INFO - Creating price-related features
+2025-04-14 19:54:25,098 - INFO - Created price features: 
+2025-04-14 19:54:25,100 - INFO - Added price features: 41 total columns
+2025-04-14 19:54:25,100 - INFO - Encoding categorical features
+2025-04-14 19:54:25,117 - INFO - Created brand tiers with 3274 brands
+2025-04-14 19:54:25,299 - INFO - One-hot encoded 4 categorical columns
+2025-04-14 19:54:25,301 - INFO - Encoded dataset: 3499 columns after encoding
+2025-04-14 19:54:25,301 - INFO - Creating price distribution visualizations
+2025-04-14 19:54:44,009 - INFO - Price distribution visualizations complete
+2025-04-14 19:54:44,009 - INFO - Splitting dataset by category
+2025-04-14 19:54:44,017 - INFO - Splitting Computers: 716 products
+2025-04-14 19:54:44,024 - INFO - Split Computers: 572 train, 144 test
+2025-04-14 19:54:44,041 - INFO - Splitting Mobile Accessories: 817 products
+2025-04-14 19:54:44,047 - INFO - Split Mobile Accessories: 653 train, 164 test
+2025-04-14 19:54:44,060 - INFO - Splitting Home Entertainment: 868 products
+2025-04-14 19:54:44,066 - INFO - Split Home Entertainment: 694 train, 174 test
+2025-04-14 19:54:44,074 - INFO - Splitting Kitchen Appliances: 863 products
+2025-04-14 19:54:44,080 - INFO - Split Kitchen Appliances: 690 train, 173 test
+2025-04-14 19:54:44,097 - INFO - Splitting Audio: 1318 products
+2025-04-14 19:54:44,104 - INFO - Split Audio: 1054 train, 264 test
+2025-04-14 19:54:44,110 - INFO - Splitting Smartwatches: 630 products
+2025-04-14 19:54:44,117 - INFO - Split Smartwatches: 504 train, 126 test
+2025-04-14 19:54:44,126 - INFO - Splitting Climate Control: 917 products
+2025-04-14 19:54:44,132 - INFO - Split Climate Control: 733 train, 184 test
+2025-04-14 19:54:44,148 - INFO - Splitting Home Office: 1273 products
+2025-04-14 19:54:44,154 - INFO - Split Home Office: 1018 train, 255 test
+2025-04-14 19:54:44,162 - INFO - Splitting Cameras: 818 products
+2025-04-14 19:54:44,167 - INFO - Split Cameras: 654 train, 164 test
+2025-04-14 19:54:44,200 - INFO - Splitting Home Improvement: 2301 products
+2025-04-14 19:54:44,211 - INFO - Split Home Improvement: 1840 train, 461 test
+2025-04-14 19:54:44,258 - INFO - Final split: 8412 train, 2109 test
+2025-04-14 19:54:54,260 - INFO - Saved Computers data: 572 train, 144 test
+2025-04-14 19:54:55,090 - INFO - Saved Mobile Accessories data: 653 train, 164 test
+2025-04-14 19:54:56,018 - INFO - Saved Home Entertainment data: 694 train, 174 test
+2025-04-14 19:54:56,890 - INFO - Saved Kitchen Appliances data: 690 train, 173 test
+2025-04-14 19:54:58,207 - INFO - Saved Audio data: 1054 train, 264 test
+2025-04-14 19:54:58,885 - INFO - Saved Smartwatches data: 504 train, 126 test
+2025-04-14 19:54:59,833 - INFO - Saved Climate Control data: 733 train, 184 test
+2025-04-14 19:55:01,396 - INFO - Saved Home Office data: 1018 train, 255 test
+2025-04-14 19:55:02,292 - INFO - Saved Cameras data: 654 train, 164 test
+2025-04-14 19:55:05,113 - INFO - Saved Home Improvement data: 1840 train, 461 test
+2025-04-14 19:55:05,114 - INFO - Improved data preparation process complete!

@@ -1,0 +1,18 @@
+{
+    "category": "Climate Control",
+    "predicted_market_price": 375.53477783203124,
+    "manufacturing_cost": 150.0,
+    "recommended_price": 281.6510833740234,
+    "min_competitive_price": 281.6510833740234,
+    "max_competitive_price": 319.2045611572265,
+    "minimum_viable_price": 164.83516483516482,
+    "profit_margin": 0.46742615649447045,
+    "profit_margin_percentage": 46.742615649447046,
+    "discount_from_market": 25.000000000000007,
+    "market_saturation": "medium",
+    "brand_strength": "medium",
+    "price_elasticity": -1.5,
+    "estimated_sales_impact": 37.500000000000014,
+    "strategy": "Aggressive Market Entry",
+    "market_position_percentile": 8.001451232216574
+}
