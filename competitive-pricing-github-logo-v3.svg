@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Background -->
+  <rect width="256" height="256" fill="#2C3E50" rx="32"/>
+  
+  <!-- Price tag with graph -->
+  <g transform="translate(28, 78)">
+    <!-- Price tag simplified -->
+    <path d="M0 40 L120 40 L160 80 L120 120 L0 120 Z" fill="#3498DB"/>
+    
+    <!-- Price tag line -->
+    <path d="M30 50 L30 110" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Graph overlay -->
+    <path d="M50 95 L80 70 L110 85 L140 60 L170 75" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="10" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Rupee symbol as path instead of text -->
+  <path d="M64 80 H90 M64 80 C64 80 64 110 90 110 M64 95 H85" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="7" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="228" cy="28" r="12" fill="#3498DB" opacity="0.5"/>
+  <circle cx="28" cy="228" r="12" fill="#3498DB" opacity="0.5"/>
+</svg>
