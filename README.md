@@ -138,7 +138,7 @@ The models are evaluated using multiple metrics:
 
 ## Contributing
 
-This project is maintained by [Your Name/Team]. Contributions are welcome!
+This project is maintained by Bikram Sardar and Alapan Sen. Contributions are welcome!
 
 ## License
 
